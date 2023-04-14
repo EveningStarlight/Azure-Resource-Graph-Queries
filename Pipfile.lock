@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "65a99c9ce5aa14d9f27185e81bb953359411bbb4261aa5c98cf45f19318704c4"
+            "sha256": "2b000003568e5148f0429bb7f61f010ff82ba13cc198334c8ef5e9a5281228b2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -91,6 +91,14 @@
             ],
             "index": "pypi",
             "version": "==8.0.0"
+        },
+        "azure-storage-blob": {
+            "hashes": [
+                "sha256:43b45f19a518a5c6895632f263b3825ebc23574f25cc84b66e1630a6160e466f",
+                "sha256:91bb192b2a97939c4259c72373bac0f41e30810bbc853d5184f0f45904eacafd"
+            ],
+            "index": "pypi",
+            "version": "==12.16.0"
         },
         "azure.identity": {
             "hashes": [
