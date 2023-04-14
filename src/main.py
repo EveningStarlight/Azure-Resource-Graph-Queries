@@ -42,12 +42,8 @@ class Container:
         container_client = ContainerClient(account_url, name, credential)
         properties = container_client.get_container_properties()
         blobs = container_client.list_blobs()
-        for blob in blobs:
-            print(blob.name + " : " + str(blob.blob_type))
         totalSize = sum(blob['size'] for blob in blobs)
 
-        
-        
         self.name = properties.name
         self.ucid = properties.metadata["ucid"]
         self.size = totalSize
