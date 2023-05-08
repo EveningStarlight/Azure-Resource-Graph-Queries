@@ -4,9 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-azure-mgmt-resourcegraph = "*"
-azure-mgmt-resource = "*"
-azure-cli-core = "*"
 "azure.identity" = "*"
 azure-storage-blob = "*"
 

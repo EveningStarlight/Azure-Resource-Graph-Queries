@@ -31,13 +31,13 @@ class StorageAccount:
 
             account_url = "https://" + storageAccount + ".blob.core.windows.net"
             credential = AzureCliCredential()
-
+            
             # Create the BlobServiceClient object
             blob_service_client = BlobServiceClient(account_url, credential=credential)
-
+            
             containerList = blob_service_client.list_containers()
             containerObjs = {}
-
+            print(containerList)
             for container in containerList:
                 try:
                     containerObj = Container(account_url, container.name, credential, storageAccount)
